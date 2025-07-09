@@ -21,15 +21,15 @@ INSTALLED_APPS = [
     # Third Party Apps
     'rest_framework',
     'corsheaders',
-    
+    'rest_framework_simplejwt',
     
     # Apps
-    'apps.core',
-    'apps.notifications',
-    'apps.tasks',
-    'apps.shared',
-    'apps.users',
-    'apps.teams'   
+    'apps.core.apps.CoreConfig',
+    'apps.notifications.apps.NotificationsConfig',
+    'apps.tasks.apps.TasksConfig',
+    'apps.shared.apps.SharedConfig',
+    'apps.teams.apps.TeamsConfig',   
+    'apps.users.apps.UsersConfig',
 ]
 
 REST_FRAMEWORK = {
@@ -87,6 +87,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTH_USER_MODEL = 'users.User'
 
 ROOT_URLCONF = 'taskmanager.urls'
 
