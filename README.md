@@ -46,8 +46,8 @@ TaskManager é uma aplicação back-end desenvolvida com Django, com foco na apl
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seuusuario/taskmanager-solid-django.git
-cd taskmanager-solid-django
+git clone https://github.com/seuusuario/task-manager.git
+cd task-manager
 
 # Crie e ative um ambiente virtual
 python -m venv venv
